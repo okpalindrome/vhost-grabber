@@ -18,7 +18,7 @@ optional arguments:
   -h, --help            show this help message and exit
   --domain DOMAIN, -d DOMAIN
                         Please enter the target domain
-  --type include,only}, -t {include,only}
+  --type {include,only}, -t {include,only}
                         Type of scan
 ```
 Note: `--type` flag is optional and default value is set to `only` 
