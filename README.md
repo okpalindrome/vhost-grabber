@@ -10,7 +10,7 @@ Retrieve the virtual hosts (vhosts) of a target using the Censys Search Engine A
 Usage instructions:
 ```
 ▶ python vhost-grabber.py --help
-usage: vhost-grabber.py [-h] --domain DOMAIN [--type {exclude,include,only}]
+usage: vhost-grabber.py [-h] --domain DOMAIN [--type {include,only}]
 
 Grab all vhosts of a target from Censys Search Engine.
 
@@ -18,7 +18,7 @@ optional arguments:
   -h, --help            show this help message and exit
   --domain DOMAIN, -d DOMAIN
                         Please enter the target domain
-  --type {exclude,include,only}, -t {exclude,include,only}
+  --type include,only}, -t {include,only}
                         Type of scan
 ```
 Note: `--type` flag is optional and default value is set to `only` 
