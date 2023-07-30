@@ -60,7 +60,7 @@ def main():
     parser = argparse.ArgumentParser(description='Grab all vhosts of a target from Censys Search Engine.')
     
     parser.add_argument('--domain', '-d', type=str, required=True, help='Please enter the target domain')
-    parser.add_argument('--type', '-t', type=str, choices=['exclude', 'include', 'only'], help='Type of scan', default='only')
+    parser.add_argument('--type', '-t', type=str, choices=['include', 'only'], help='Type of scan', default='only')
     args = parser.parse_args()
 
     target = trim_url(args.domain)
